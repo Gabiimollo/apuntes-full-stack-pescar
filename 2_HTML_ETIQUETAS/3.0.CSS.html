@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos con CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Estilos con CSS</h1>
+    <p>Hojas de Estilo en Cascada</p>
+    <a href="../index.html"><button>Home</button></a>
+    <hr>
+    
+    <p>Se utilizan distintas formas segun las necesidades que se tengan con los estilos.</p>
+    <p>Existen 3 formas para incorporar los estilos:</p>
+
+    <h2>1. Estilo en Linea</h2>
+    <p>Se coloca <i>el atributo <b>style</b></i> a la etiqueta, y como valor las propiedades con sus valores en css</p>
+    <p>Se utiliza para estilos especificos</p>
+    <p style="background-color: grey; color: yellowgreen; font-weight: bold;">Este es el ejemplo</p>
+
+    <h2>2. Estilo Interno</h2>
+    <p>La regla CSS se realiza en una etiqueta llamada <b>style</b></p>
+    <p>Se utiliza para estilos mas generales dentro de una pagina, optimizando su carga sin traer un archivo extra</p>
+    <p class="p">Este es el ejemplo</p>
+    <style>
+        .p{
+            background-color: grey; 
+            color: coral;
+            font-weight: bold;
+        }
+    </style>
+
+    <h2><strong>3. Hoja de Estilos Externa</strong></h2>
+    <p>Se crea un archivo con extension .css donde se colocan las reglas de estilo. Luego, se indexa al archivo HTML que va a aplicar los estilos.</p>
+    <p>Se utiliza para estilos generales, que se quieran compartir entre diferentes paginas</p>
+    <p>Para realizar esto, se coloca la etiqueta <b>link:css</b> dentro de la etiqueta head, y se le pasan 2 atributos:</p>
+    <ol>
+        <li>rel="stylesheet"</li>
+        <li>href="./style.css": Es la ubicación del archivo css en la ruta de mi proyecto</li>
+    </ol>
+    <p class="p__ejemplo">Este es el ejemplo</p>
+    <p>Esta hoja, se lee de arriba hacia abajo (por eso se denomina "en cascada")</p>
+
+    <a href="./3.1.SelectoresCSS.html"><button>Selectores con CSS</button></a>
+</body>
+</html>
