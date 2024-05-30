@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario GET</title>
+</head>
+<body>
+    <h1>Formulario GET</h1>
+    <hr>
+
+    <form action="http://www.google.com/search" method="get" target="_parent">
+        <label for="buscador-google">Buscar en Google</label>
+        <input type="text" name="q" id="buscador-google">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <form action="" method="get">Yahoo
+        <label>
+            <input type="text" name="p">Buscar en Yahoo
+        </label>
+        <button type="submit">Buscar</button>
+    </form>
+    <br>
+
+    <!-- De práctica realizar lo mismo con Yahoo, Bing y DuckDuckGO -->
+
+    <!-- Formulario del Backend -->
+    <h2>Informacion del Usuario</h2>
+    <hr>
+
+    <form action="http://localhost:8080/datos-persona" method="post">
+
+        <label for="lbl-nombre">Nombre</label>
+        <input type="text"  name="nombre" id="lbl-nombre">
+
+        <label for="lbl-apellido">Apellido</label>
+        <input type="text"  name="apellido" id="lbl-apellido">
+
+        <label for="lbl-edad">Edad</label>
+        <input type="number" name="edad" id="lbl-edad">
+
+        <label for="lbl-correo">Correo</label>
+        <input type="email"  name="correo" id="lbl-correo">
+
+        <label for="lbl-password">Contraseña</label>
+        <input type="password" name="password" id="lbl-password">
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
